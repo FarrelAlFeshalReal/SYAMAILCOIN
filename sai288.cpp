@@ -93,7 +93,7 @@ int main() {
     std::vector<double> S_list(10, 1.0);
     int block_index = 0;
     std::vector<uint8_t> raw_bytes(16);
-    for (int i = 0; i < raw_bytes.size(); i++) raw_bytes[i] = (i + block_index + 1) % 256;
+    for (int i = 0; i < raw_bytes.size(); i++) raw_bytes[i] = (i + block_index + 1) % 288;
 
     auto hash = sai288_hash(raw_bytes);
     std::cout << "SAI288 Hash: ";
