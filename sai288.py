@@ -1,4 +1,3 @@
-
 import struct
 from decimal import Decimal, getcontext
 import math
